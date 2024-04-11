@@ -31,9 +31,3 @@ The K-Means algorithm implemented in this script involves the following steps:
 5. **Convergence check**: If the centroids have stopped changing, the algorithm stops. If they haven't, steps 2-4 are repeated.
 6. **Quality of clustering**: The quality of the clusters is calculated based on the sum of the distances between the data points and their assigned centroids. The lower the quality measure (q), the better the clustering.
 7. **Multiple runs**: The entire process is run multiple times, and the clustering with the best quality is selected as the final output.
-
-#### Learning Objectives
-The purpose of this project is to understand the underlying workings of the K-Means clustering algorithm without using any existing machine learning libraries. This will enable you to gain a deeper understanding of how the K-Means algorithm works in practice and how it can be applied to real-world datasets.
-
-Enjoy exploring the world of unsupervised learning with this barebones K-Means clustering implementation!
-
