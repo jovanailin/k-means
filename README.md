@@ -1,33 +1,33 @@
 # K-Means Clustering - Custom Implementation
 
-This repository contains a Python implementation of the K-Means clustering algorithm. The purpose of this project is to understand the underlying logic and functioning of the K-Means algorithm without relying on existing machine learning libraries. The code reads in a dataset and performs K-Means clustering on it, providing a quality measure for the resulting clusters.
+## Overview
 
-## Dependencies
+This Jupyter Notebook provides a detailed, step-by-step custom implementation of the K-Means clustering algorithm. The notebook uses the Boston housing dataset to demonstrate the algorithm's application to real-world data. This hands-on approach helps in understanding the internal workings of K-Means clustering, including various initialization strategies and their impact on clustering results.
 
-The following Python libraries are required to run the script:
+## Objectives
+- Implement K-Means from scratch: Build the K-Means clustering algorithm using Python without relying on high-level library functions.
+- Explore centroid initialization methods: Examine how different methods ('random' and 'farthest') affect the clustering outcomes.
+- Visualize clustering results: Use 3D plots to visualize how data is segmented into clusters.
+  
+## Methodology
+- Data Preprocessing: Normalize and standardize the Boston housing dataset to prepare it for clustering.
+- Centroid Initialization: Implement and compare two strategies—random and the farthest point.
+- K-Means Clustering: Detailed implementation including cluster assignment and centroid updating.
+- Evaluation: Analyze the clustering performance using the Within-Cluster Sum of Squares (WCSS).
+  
+## Usage
+- Prerequisites: Ensure you have Python installed along with the libraries: pandas, numpy, matplotlib, scipy, and sklearn.
+- Execution: Run the notebook cell-by-cell to observe each step in the K-Means clustering process from initialization to visualization.
+- Structure of the Notebook
+- Introduction and Dataset Overview
+  
+## Data Preprocessing
+- Exploratory Data Analysis
+- K-Means Clustering Implementation
+- Clustering Evaluation
+- Visualization of Results
+- Visualization and Analysis
+The notebook includes functions to visualize clustering results in 3D space, helping to better understand how different initialization methods can lead to varying cluster formations.
 
-- pandas
-- numpy
-- random
-- copy
-- scipy
-
-### Usage
-
-To run the script, simply use Python 3 as follows:
-
-``` python kmeans_jovanailin.py ```
-
-Before running the script, make sure to set the attribute weights and the number of clusters (k) as per your requirements in the `kmeans_jovanailin.py` file.
-
-### Algorithm
-
-The K-Means algorithm implemented in this script involves the following steps:
-
-1. **Random centroid initialization**: Random values within the data range are selected as the initial centroids of the clusters.
-2. **Distance calculation**: The Euclidean or City Block distance between each data point and the centroids is calculated.
-3. **Assignment of points to clusters**: Each data point is assigned to the cluster whose centroid it is closest to.
-4. **Centroid update**: The centroids of the clusters are updated based on the mean of the data points assigned to the cluster.
-5. **Convergence check**: If the centroids have stopped changing, the algorithm stops. If they haven't, steps 2-4 are repeated.
-6. **Quality of clustering**: The quality of the clusters is calculated based on the sum of the distances between the data points and their assigned centroids. The lower the quality measure (q), the better the clustering.
-7. **Multiple runs**: The entire process is run multiple times, and the clustering with the best quality is selected as the final output.
+### Conclusion
+By the end of this notebook, users will have a thorough understanding of the K-Means clustering mechanics and be able to apply these concepts to other datasets.
